@@ -22,7 +22,7 @@ function viewCart() {
     var i = []
     var list = []
     for (i = 0; i < cart.length; i++) {
-      list.push(` ${Object.keys(cart)[i]} at $${Object.values(cart)[i]}`)
+      list.push(`${Object.keys(cart)[i]} at $${Object.values(cart)[i]}`)
     }
     console.log(`In your cart, you have${list}.`)
   }
