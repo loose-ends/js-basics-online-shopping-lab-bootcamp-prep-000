@@ -20,7 +20,7 @@ function viewCart() {
   if (Object.keys(cart).length === 0) {console.log('Your shopping cart is empty.')}
   else {
     var i = 0
-    const list = []
+    var list = []
     while (i < Object.keys(cart).length-1) {
       list.push(` ${Object.keys(cart)[i]} at $${Object.values(cart)[i]}`)
       i++
