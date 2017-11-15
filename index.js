@@ -22,10 +22,10 @@ function viewCart() {
     var i = 0
     var list = []
     while (i < Object.keys(cart).length-1) {
-      list.push(` ${Object.keys(cart)[i]} at $${Object.values(cart)[i]}`)
+      list.push(` ${Object.keys(cart)[i]} at \$${Object.values(cart)[i]}`)
       i++
     }
-    list.push(` and ${Object.keys(cart).pop()} at $${Object.keys(cart).pop()}`)
+    list.push(` and ${Object.keys(cart).pop()} at \$${Object.keys(cart).pop()}`)
     console.log(`In your cart, you have${list}.`)
   }
 }
