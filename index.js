@@ -21,8 +21,8 @@ function viewCart() {
   else {
     var i = []
     var list = []
-    for (i = 0; i < obj.length; i++) {
-      list.push(`${Object.keys(obj)[i]} at $${Object.values(obj)[i]}`)
+    for (i = 0; i < cart.length; i++) {
+      list.push(`${Object.keys(cart)[i]} at $${Object.values(cart)[i]}`)
     }
     console.log(`In your cart, you have${list}.`)
   }
