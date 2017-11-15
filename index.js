@@ -21,8 +21,8 @@ function viewCart() {
   if (cart.length === 0) {console.log('Your shopping cart is empty.')}
   else {
     var list = []
-    for (i = 0; i < cart.length; i++) {
-      list.push(`${cart.itemName[0]} at $${cart.itemPrice[1]}.`) // need to understand object.keys? - split contents
+    Object.keys(cart).forEach(function(key) {
+    list.push(`${key} at $${cart[key]}`)
     }
     console.log("In your cart, you have " + list)
   }
