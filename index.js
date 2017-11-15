@@ -20,10 +20,10 @@ function viewCart() {
   if (cart.length === 0) {console.log('Your shopping cart is empty.')}
   else {
     var list = []
-    Object.keys(cart).forEach(function(key) {
-    list.push(` ${key} at $${cart[key]}`)
-  })
-  console.log(`In your cart, you have ${list}.`)
+    for (i = 0; i < obj.length; i++) {
+      list.push(`${Object.keys(obj)[i]} at $${Object.values(obj)[i]}`)
+    }
+    console.log(`In your cart, you have${list}.`)
   }
 }
 
