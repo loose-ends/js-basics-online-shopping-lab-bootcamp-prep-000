@@ -22,7 +22,7 @@ function viewCart() {
   else {
     var list = []
     for (i = 0; i < cart.length; i++) {
-      list.push('${cart.itemName[0]} at $${cart.itemPrice[1]}.') // need to understand object.keys? - split contents
+      list.push(`${cart.itemName[0]} at $${cart.itemPrice[1]}.`) // need to understand object.keys? - split contents
     }
     console.log("In your cart, you have " + list)
   }
