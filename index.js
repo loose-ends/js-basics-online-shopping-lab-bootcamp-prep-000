@@ -23,10 +23,9 @@ function viewCart() {
     var list = []
     Object.keys(cart).forEach(function(key) {
     list.push(`${key} at $${cart[key]}`)
-    }
-
-  }
+  })
   console.log("In your cart, you have " + list)
+  }
 }
 
 function total() {
