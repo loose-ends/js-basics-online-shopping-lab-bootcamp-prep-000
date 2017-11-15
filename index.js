@@ -25,7 +25,7 @@ function viewCart() {
       list.push(` ${Object.keys(cart)[i]} at $${Object.values(cart)[i]}`)
       i++
     }
-    list.push(` ${Object.keys(cart)[Object.keys(cart).length]} at $${Object.values(cart)[Object.keys(cart).length]}`)
+    list.push(` ${Object.keys(cart)[Object.keys(cart).pop()]} at $${Object.values(cart)[Object.keys(cart).pop()]}`)
     console.log(`In your cart, you have${list}.`)
   }
 }
