@@ -18,13 +18,14 @@ function addToCart(itemName) {
 
 function viewCart() {
   var i = []
+  
   if (cart.length === 0) {console.log('Your shopping cart is empty.')}
   else {
     var list = []
     Object.keys(cart).forEach(function(key) {
-    list.push(`${key} at $${cart[key]}.`)
+    list.push(`${key} at $${cart[key]}`)
   })
-  console.log("In your cart, you have " + list)
+  console.log(`In your cart, you have ${list}.`)
   }
 }
 
