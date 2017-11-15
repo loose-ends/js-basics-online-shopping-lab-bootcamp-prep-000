@@ -19,6 +19,7 @@ function addToCart(itemName) {
 function viewCart() {
   if (cart.length === 0) {console.log('Your shopping cart is empty.')}
   else {
+    var i = []
     var list = []
     for (i = 0; i < obj.length; i++) {
       list.push(`${Object.keys(obj)[i]} at $${Object.values(obj)[i]}`)
